@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DELWaterCheck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="image.png" alt="Logo IT Del" class="logo">
+    <h1>DELWaterCheck</h1>
+    <p class="subtitle">Laporkan kondisi keran kampus secara cepat dan mudah</p>
+
+    <form id="reportForm">
+      <label for="lokasi">Pilih Lokasi Keran:</label>
+      <select id="lokasi" name="lokasi" required>
+        <option value="">-- Pilih Lokasi --</option>
+        <option value="Pencucian Sendok Kantin Andaliman">Pencucian Sendok Kantin Andaliman</option>
+        <option value="Pencucian Sendok Kantin 1 Rias">Pencucian Sendok Kantin 1 Rias</option>
+        <option value="Pencucian Sendok Kantin 2 Rias">Pencucian Sendok Kantin 2 Rias</option>
+      </select>
+
+      <label for="masalah">Deskripsikan Masalah Air:</label>
+      <textarea id="masalah" name="masalah" rows="4" placeholder="Contoh: Air mengalir sangat kecil..." required></textarea>
+
+      <button type="submit">Kirim Laporan</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
